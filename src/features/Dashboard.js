@@ -1,15 +1,16 @@
 import React from "react";
-import { Container, Grid, useMediaQuery, useTheme } from "@mui/material";
+import { Box, Container, Grid, useMediaQuery, useTheme } from "@mui/material";
 import Profile from "../components/Profile";
 import ExternalLinks from "../components/ExternalLinks";
 import Portfolio from "../components/Portfolio";
+import Footer from "../components/Footer";
 
 const Dashboard = () => {
   const isMobile = useMediaQuery((theme) => theme.breakpoints.down("sm"));
   const theme = useTheme();
 
   return (
-    <div sx={{backgroundColor: theme.palette.primary.main}}>
+    <Box sx={{backgroundColor: theme.palette.primary.main}}>
       <Container
         maxWidth="false"
         sx={{
@@ -39,7 +40,8 @@ const Dashboard = () => {
       >
         <Portfolio />
       </Container>
-    </div>
+      <Footer />
+    </Box>
   );
 };
 

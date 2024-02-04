@@ -14,10 +14,10 @@ const Profile = () => {
       </Grid>
       <Grid item sx={{ marginLeft: '1em' }}>
         <Typography variant="h4" gutterBottom>
-          Adam Woodruff
+          Adam Woodruff, BSc
         </Typography>
         <Typography variant="body1">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        An experienced software developer with a strong emphasis on cybersecurity operations. Specializing in C# and JavaScript, I create secure websites for global companies, handling tens of millions of transactions annually. Committed to integrating best practices into all aspects of development to ensure robust and innovative solutions.
         </Typography>
       </Grid>
     </Grid>

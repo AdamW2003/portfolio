@@ -1,13 +1,11 @@
 import React from 'react';
-import { Grid, Link } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 
-const Footer = ({ isMobile }) => {
+const Footer = () => {
   return (
-    <Grid container justifyContent={isMobile ? 'center' : 'flex-end'}>
-      <Grid item>
-        <Link href="#">@johndoe</Link>
-      </Grid>
-    </Grid>
+    <Box textAlign="center">
+      <Typography>A portfolio website made using React.js by Adam Woodruff</Typography>
+    </Box>
   );
 };
 

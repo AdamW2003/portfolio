@@ -1,64 +1,82 @@
+import {
+  Box,
+  Typography
+} from "@mui/material";
 import React from "react";
-import { Card, CardContent, Divider, Typography, useMediaQuery, useTheme } from "@mui/material";
+import ProjectList from "./ProjectList";
 
 const Portfolio = () => {
-  const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
-
-  const projects = [
+  const SoftwareProjects = [
     {
-      title: "Project 1",
-      description: "Description for Project 1.",
+      title: "SHA-256",
+      description: "A python implementation of the SHA-256 algorithm.",
+      githubLink: "https://github.com/Adam-Woodruff/SHA-256",
     },
     {
-      title: "Project 2",
-      description: "Description for Project 2.",
+      title: "RSA Encryption",
+      description: "An implementation of RSA in python using common practices including modular exponentation and the extended eulidean algorithm as well as fermats test to test for primality",
+      githubLink: "https://github.com/Adam-Woodruff",
     },
     {
-      title: "Project 3",
-      description: "Description for Project 3.",
+      title: "Image Steganography",
+      description:
+        "A Least significant bit implementation of image steganography disguising a message in any image ",
+      githubLink: "https://github.com/Adam-Woodruff",
     },
     {
-      title: "Project 4",
-      description: "Description for Project 4.",
+      title: "Frequency Analysis",
+      description:
+        "A frequency analysis implementation in Python making use of patterns in the english language including bigrams and trigrams to deciper text encrypted by substitution.",
+      githubLink: "https://github.com/Adam-Woodruff",
+    },
+    {
+      title: "Feistel Cipher",
+      description: "An implementation of the Feistel cipher in python",
+      githubLink: "https://github.com/Adam-Woodruff",
+    },
+    {
+      title: "OTP Encryption",
+      description: "A simple one time pad implementation in python",
+      githubLink: "https://github.com/Adam-Woodruff",
+    },
+    {
+      title: "String Searching",
+      description:
+        "An exploration of vairous string searching algorithms and their applications in cryptography",
+      githubLink: "https://github.com/Adam-Woodruff",
+    },
+    {
+      title: "Kubernetes cluster",
+      description:
+        "A local Kubernetes cluster setup on 3 raspberry pis",
+      githubLink: "https://github.com/Adam-Woodruff",
     },
   ];
 
-  const cardContainerStyle = {
-    padding: theme.spacing(2),
-    margin: 'auto',
-    width: isMobile ? '98%' : '98%', // Adjust as needed
-  };
-
-  const cardStyle = {
-    backgroundColor: theme.palette.tertiary.main,
-    color: "black",
-  };
-
-  const dividerStyle = {
-    margin: theme.spacing(3, 0),
-    width: '90vw',
-    margin: 'auto',
-  };
+  const HardwareProjects = [
+    {
+      title: "USB Rubber Duckie",
+      description: "My own version of the hak5 usb rubber ducky using a Raspberry Pi Pico for physical pen testing",
+      githubLink: "https://github.com/Adam-Woodruff/SHA-256",
+    },
+    {
+      title: "Robot",
+      description: "A self driving 3D printed robot that makes use of ultra sonic and infrared sensors along with a machine learning model to map and navigate a room",
+      githubLink: "https://github.com/Adam-Woodruff",
+    }
+  ];
 
   return (
-    <div>
-      {projects.map((project, index) => (
-        <React.Fragment key={index}>
-          {/* <div style={cardContainerStyle}>
-            <Card style={cardStyle}>
-              <CardContent> */}
-                <Typography variant="h5" component="div">
-                  {project.title}
-                </Typography>
-                <Typography color="text.secondary">{project.description}</Typography>
-              {/* </CardContent>
-            </Card>
-          </div> */}
-          {index < projects.length - 1 && <Divider style={dividerStyle} />}
-        </React.Fragment>
-      ))}
-    </div>
+    <Box>
+      <Typography variant="h1" sx={{ paddingBottom: 2 }}>
+        Software Projects
+      </Typography>
+      <ProjectList projects={SoftwareProjects} />
+      <Typography variant="h1" sx={{ paddingBottom: 2, paddingTop: 2 }}>
+        Hardware Projects
+      </Typography>
+      <ProjectList projects={HardwareProjects} />
+    </Box>
   );
 };
 
