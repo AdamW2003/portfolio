@@ -14,7 +14,7 @@ const Portfolio = () => {
     },
     {
       title: "RSA Encryption",
-      description: "An implementation of RSA in python using common practices including modular exponentation and the extended eulidean algorithm as well as fermats test to test for primality",
+      description: "An implementation of RSA in python using common practices including modular exponentation and the extended eulidean algorithm as well as fermats test for primality",
       githubLink: "https://github.com/Adam-Woodruff",
     },
     {
