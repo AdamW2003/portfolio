@@ -26,7 +26,7 @@ const Portfolio = () => {
     {
       title: "Frequency Analysis",
       description:
-        "A frequency analysis implementation in Python making use of patterns in the english language including bigrams and trigrams to deciper text encrypted by substitution.",
+        "A frequency analysis implementation in Python making use of patterns including bigrams and trigrams to deciper text encrypted by substitution.",
       githubLink: "https://github.com/Adam-Woodruff",
     },
     {

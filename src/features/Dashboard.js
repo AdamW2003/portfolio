@@ -4,6 +4,7 @@ import Profile from "../components/Profile";
 import ExternalLinks from "../components/ExternalLinks";
 import Portfolio from "../components/Portfolio";
 import Footer from "../components/Footer";
+import Skills from "../components/Skills";
 
 const Dashboard = () => {
   const isMobile = useMediaQuery((theme) => theme.breakpoints.down("sm"));
@@ -39,6 +40,9 @@ const Dashboard = () => {
         maxWidth="false"
       >
         <Portfolio />
+      </Container>
+      <Container>
+        <Skills />
       </Container>
       <Footer />
     </Box>
