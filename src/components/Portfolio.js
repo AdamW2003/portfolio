@@ -30,6 +30,11 @@ const Portfolio = () => {
       githubLink: "https://github.com/Adam-Woodruff",
     },
     {
+      title: "Dynamic Multi Parallel DNA Diffusion",
+      description: "An pythonic implementation of a Image Encryption Scheme based on DNA matrices",
+      githubLink: "https://github.com/Adam-Woodruff",
+    },
+    {
       title: "Feistel Cipher",
       description: "An implementation of the Feistel cipher in python",
       githubLink: "https://github.com/Adam-Woodruff",
