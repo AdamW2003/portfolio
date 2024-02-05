@@ -4,7 +4,7 @@ import { Box, Typography } from '@mui/material';
 const Footer = () => {
   return (
     <Box textAlign="center">
-      <Typography>A portfolio website made using React.js by Adam Woodruff</Typography>
+      <Typography>Adam Woodruff</Typography>
     </Box>
   );
 };
