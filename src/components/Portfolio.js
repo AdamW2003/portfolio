@@ -66,7 +66,7 @@ const Portfolio = () => {
 
   const HardwareProjects = [
     {
-      title: "USB Rubber Duckie",
+      title: "USB Rubber Ducky",
       description: "My own version of the hak5 usb rubber ducky using a Raspberry Pi Pico for physical pen testing",
       githubLink: "https://github.com/Adam-Woodruff/SHA-256",
     },
