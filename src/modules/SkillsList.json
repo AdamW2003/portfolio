@@ -1,0 +1,51 @@
+{
+  "Languages": [
+    "JavaScript",
+    "TypeScript",
+    "Python",
+    "C#",
+    "PHP",
+    "CSS",
+    "HTML",
+    "SQL"
+  ],
+  "Database": [
+    "DynamoDb",
+    "MySQL",
+    "SQL Server",
+    "Redis"
+  ],
+  "FrameWork": [
+    ".NET",
+    "React js",
+    "Angular js",
+    "Entity Framework",
+    "Bootstrap"
+  ],
+  "Tools": [
+    "SSRS",
+    "SonarQube",
+    "K9S",
+    "Git"
+  ],
+  "DevOps": [
+    "AWS",
+    "Azure",
+    "Cloudflare",
+    "Github Actions",
+    "Octopus Deployment",
+    "Docker",
+    "Kubernetes",
+    "Apache"
+  ],
+  "Development": [
+    "Continous Deployment + Development",
+    "ISO 27001",
+    "REST",
+    "WebSocket",
+    "kanban",
+    "Machine Learning",
+    "TensorFlow",
+    "Computer Vision"
+  ]
+}

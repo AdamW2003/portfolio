@@ -5,8 +5,9 @@ import Box from '@mui/material/Box';
 import ButtonGroup from '@mui/material/ButtonGroup';
 import Button from '@mui/material/Button';
 import { Typography, useMediaQuery } from '@mui/material';
+import skillsList from '../modules/SkillsList.json'
 
-const PortfolioSearch = ({ skills }) => {
+const PortfolioSearch = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('All');
   const maxSkillsToShow = 25;
@@ -24,16 +25,16 @@ const PortfolioSearch = ({ skills }) => {
 
   const uniqueCategories = useMemo(() => {
     // Extract unique categories from skills object
-    const categoriesSet = new Set(Object.keys(skills));
+    const categoriesSet = new Set(Object.keys(skillsList));
     return ['All', ...categoriesSet];
-  }, [skills]);
+  }, [skillsList]);
 
   const flattenSkills = useMemo(() => {
     // Flatten the skills object into an array of objects
-    return Object.entries(skills).flatMap(([category, labels]) =>
+    return Object.entries(skillsList).flatMap(([category, labels]) =>
       labels.map((label) => ({ label, category }))
     );
-  }, [skills]);
+  }, [skillsList]);
 
   const filteredSkills = flattenSkills
     .filter((skill) =>

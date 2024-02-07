@@ -5,6 +5,7 @@ import ExternalLinks from "../components/ExternalLinks";
 import Portfolio from "../components/Portfolio";
 import Footer from "../components/Footer";
 import Skills from "../components/Skills";
+import DashboardTimeline from "../components/DashboardTimeline";
 
 const Dashboard = () => {
   const isMobile = useMediaQuery((theme) => theme.breakpoints.down("sm"));
@@ -36,6 +37,9 @@ const Dashboard = () => {
           </Grid>
         </Grid>
       </Container>
+      <Container>
+        <DashboardTimeline />
+      </Container>
       <Container
         maxWidth="false"
       >
@@ -44,7 +48,6 @@ const Dashboard = () => {
       <Container>
         <Skills />
       </Container>
-      <Footer />
     </Box>
   );
 };

@@ -56,6 +56,12 @@ const Portfolio = () => {
         "A local Kubernetes cluster setup on 3 raspberry pis",
       githubLink: "https://github.com/Adam-Woodruff",
     },
+    {
+      title: "Keylogger",
+      description:
+        "A C++ and C# keylogger experment on my local machine, exporting to raspberry pi pico",
+      githubLink: "https://github.com/Adam-Woodruff",
+    }
   ];
 
   const HardwareProjects = [
