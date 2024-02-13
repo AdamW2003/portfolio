@@ -18,6 +18,11 @@ const Portfolio = () => {
       githubLink: "https://github.com/Adam-Woodruff",
     },
     {
+      title: "AES Encryption",
+      description: "A Python implementation of AES a symmetric block cipher",
+      githubLink: "https://github.com/Adam-Woodruff",
+    },
+    {
       title: "Image Steganography",
       description:
         "A Least significant bit implementation of image steganography disguising a message in any image ",
