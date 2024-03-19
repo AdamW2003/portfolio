@@ -35,17 +35,18 @@
     "Github Actions",
     "Octopus Deployment",
     "Docker",
-    "Kubernetes",
-    "Apache"
+    "Kubernetes"
   ],
   "Development": [
     "Continous Deployment + Development",
     "ISO 27001",
     "REST",
     "WebSocket",
-    "kanban",
-    "Machine Learning",
-    "TensorFlow",
-    "Computer Vision"
+    "kanban"
+  ],
+  "Misc": [
+    "Refining LLM's",
+    "Refining Diffusion Models",
+    "3D Printing"
   ]
 }

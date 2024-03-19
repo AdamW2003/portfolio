@@ -56,15 +56,8 @@ const Portfolio = () => {
       githubLink: "https://github.com/Adam-Woodruff",
     },
     {
-      title: "Kubernetes cluster",
-      description:
-        "A local Kubernetes cluster setup on 3 raspberry pis",
-      githubLink: "https://github.com/Adam-Woodruff",
-    },
-    {
-      title: "Keylogger",
-      description:
-        "A C++ and C# keylogger experment on my local machine, exporting to raspberry pi pico",
+      title: "Image Maze Generator and A* Solution",
+      description: "A Python program to generate a depth first maze coupled with an A* implementation to solve the maze and paint the solution onto an image",
       githubLink: "https://github.com/Adam-Woodruff",
     }
   ];
@@ -82,6 +75,14 @@ const Portfolio = () => {
     }
   ];
 
+  const MiscProjects = [
+    {
+      title: "Cryptography Lecture",
+      description: "A lecture on cryptography given to my work colleagues",
+      githubLink: "",
+    }
+  ]
+
   return (
     <Box>
       <Typography variant="h1" sx={{ paddingBottom: 2 }}>
@@ -92,6 +93,10 @@ const Portfolio = () => {
         Hardware Projects
       </Typography>
       <ProjectList projects={HardwareProjects} />
+      <Typography variant="h1" sx={{ paddingBottom: 2, paddingTop: 2 }}>
+        Misc
+      </Typography>
+      <ProjectList projects={MiscProjects} />
     </Box>
   );
 };

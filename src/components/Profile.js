@@ -17,8 +17,7 @@ const Profile = () => {
           Adam Woodruff,
         </Typography>
         <Typography variant="body1">
-        I am a versatile Full Stack Developer with expertise in C#, JavaScript, PHP, and SQL. My passion lies in crafting robust, efficient, and scalable solutions across the technology stack. With a strong foundation in software development, I specialize in DevSecOps and cybersecurity practices, ensuring that every aspect of the development lifecycle is fortified against potential threats.
-        </Typography>
+        I am a versatile Full Stack Developer whose core competencies lie in C#, JavaScript, and Python. My passion lies in crafting robust, efficient, and scalable solutions across the technology stack. With a strong background in software development, I specialize in DevSecOps and cybersecurity practices, ensuring that every aspect of the development lifecycle is fortified against potential threats.        </Typography>
       </Grid>
     </Grid>
   );
