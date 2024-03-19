@@ -5,22 +5,18 @@
     "Python",
     "C#",
     "PHP",
-    "CSS",
-    "HTML",
     "SQL"
   ],
   "Database": [
     "DynamoDb",
-    "MySQL",
-    "SQL Server",
+    "SQL",
     "Redis"
   ],
   "FrameWork": [
     ".NET",
     "React js",
     "Angular js",
-    "Entity Framework",
-    "Bootstrap"
+    "Entity Framework"
   ],
   "Tools": [
     "SSRS",
@@ -41,12 +37,12 @@
     "Continous Deployment + Development",
     "ISO 27001",
     "REST",
-    "WebSocket",
-    "kanban"
+    "Agile",
+    "Kanban"
   ],
   "Misc": [
-    "Refining LLM's",
     "Refining Diffusion Models",
-    "3D Printing"
+    "3D Printing",
+    "Cryptography"
   ]
 }

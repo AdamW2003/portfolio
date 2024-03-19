@@ -75,14 +75,6 @@ const Portfolio = () => {
     }
   ];
 
-  const MiscProjects = [
-    {
-      title: "Cryptography Lecture",
-      description: "A lecture on cryptography given to my work colleagues",
-      githubLink: "",
-    }
-  ]
-
   return (
     <Box>
       <Typography variant="h1" sx={{ paddingBottom: 2 }}>
@@ -93,10 +85,6 @@ const Portfolio = () => {
         Hardware Projects
       </Typography>
       <ProjectList projects={HardwareProjects} />
-      <Typography variant="h1" sx={{ paddingBottom: 2, paddingTop: 2 }}>
-        Misc
-      </Typography>
-      <ProjectList projects={MiscProjects} />
     </Box>
   );
 };
