@@ -45,11 +45,6 @@ const Portfolio = () => {
       githubLink: "https://github.com/Adam-Woodruff",
     },
     {
-      title: "OTP Encryption",
-      description: "A simple one time pad implementation in python",
-      githubLink: "https://github.com/Adam-Woodruff",
-    },
-    {
       title: "String Searching",
       description:
         "An exploration of vairous string searching algorithms and their applications in cryptography",
