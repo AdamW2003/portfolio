@@ -59,13 +59,31 @@ const Portfolio = () => {
       title: "Image Maze Generator and A* Solution",
       description: "A Python program to generate a depth first maze coupled with an A* implementation to solve the maze and paint the solution onto an image",
       githubLink: "https://github.com/Adam-Woodruff",
+    },
+    {
+      title: "Diffie Helman",
+      description: "A series of C# experiments researching elliptic curve and typical Diffie-Hellman key exchange",
+      githubLink: "https://github.com/Adam-Woodruff",
     }
   ];
 
-  const HardwareProjects = [
+  const CyberSecurity = [
     {
       title: "USB Rubber Ducky",
       description: "My own version of the hak5 usb rubber ducky using a Raspberry Pi Pico for physical pen testing",
+      githubLink: "https://github.com/Adam-Woodruff/SHA-256",
+    },
+    {
+      title: "Evilginx",
+      description: "Locally experementing with a man-in-the-middle phishing framework capable of bypassing 2fa retrieving login credentials and cookies",
+      githubLink: "",
+    },
+  ]
+
+  const MiscProjects = [
+    {
+      title: "Company Wide Cryptography Lecture",
+      description: "A lecture giving an overview of various cryptographic techniques looking at the algorithms and its applications.",
       githubLink: "https://github.com/Adam-Woodruff/SHA-256",
     },
     {
@@ -77,14 +95,18 @@ const Portfolio = () => {
 
   return (
     <Box>
-      <Typography variant="h1" sx={{ paddingBottom: 2 }}>
+      <Typography variant="h1" sx={{ paddingBottom: "0.5em" }}>
         Software Projects
       </Typography>
       <ProjectList projects={SoftwareProjects} />
-      <Typography variant="h1" sx={{ paddingBottom: 2, paddingTop: 2 }}>
-        Hardware Projects
+      <Typography variant="h1" sx={{ paddingBottom: "0.5em", paddingTop: "1em" }}>
+      Cyber Security
       </Typography>
-      <ProjectList projects={HardwareProjects} />
+      <ProjectList projects={CyberSecurity} />
+      <Typography variant="h1" sx={{ paddingBottom: "0.5em", paddingTop: "1em" }}>
+        Misc Projects
+      </Typography>
+      <ProjectList projects={MiscProjects} />
     </Box>
   );
 };

@@ -22,7 +22,8 @@
     "SSRS",
     "SonarQube",
     "K9S",
-    "Git"
+    "Git",
+    "jsreports"
   ],
   "DevOps": [
     "AWS",
