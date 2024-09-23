@@ -23,7 +23,8 @@
     "SonarQube",
     "K9S",
     "Git",
-    "jsreports"
+    "jsreports",
+    "Elasticsearch"
   ],
   "DevOps": [
     "AWS",

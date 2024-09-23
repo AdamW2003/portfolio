@@ -7,16 +7,17 @@
     },
     {
       "id": 2,
-      "title": "Red River Software",
-      "description1": "Full Stack Developer",
-      "description2": ""
-    },
-    {
-      "id": 3,
       "title": "University of Chichester",
       "description1": "Digital and Technology Solutions Professional (Software Engineer)",
       "description2": "BSc (hons)"
     },
+    {
+      "id": 3,
+      "title": "Red River Software",
+      "description1": "Full Stack Developer",
+      "description2": ""
+    },
+
     {
       "id": 4,
       "title": "Royal Navy Reserve",

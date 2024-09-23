@@ -62,7 +62,7 @@ const Portfolio = () => {
     }
   ];
 
-  const CyberSecurity = [
+  const security = [
     {
       title: "USB Rubber Ducky",
       description: "My own version of the hak5 usb rubber ducky using a Raspberry Pi Pico for physical pen testing",
@@ -95,9 +95,9 @@ const Portfolio = () => {
       </Typography>
       <ProjectList projects={SoftwareProjects} />
       <Typography variant="h1" sx={{ paddingBottom: "0.5em", paddingTop: "1em" }}>
-      Cyber Security
+      Security
       </Typography>
-      <ProjectList projects={CyberSecurity} />
+      <ProjectList projects={security} />
       <Typography variant="h1" sx={{ paddingBottom: "0.5em", paddingTop: "1em" }}>
         Misc Projects
       </Typography>
