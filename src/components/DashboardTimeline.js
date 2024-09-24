@@ -1,12 +1,12 @@
 import React from 'react';
-import TimelineData from '../modules/TimelineData.json'
+import TimelineData from '../modules/TimelineData.json';
 import { Timeline, TimelineConnector, TimelineContent, TimelineDot, TimelineItem, TimelineSeparator } from '@mui/lab';
 import { Typography } from '@mui/material';
 
 const DashboardTimeline = () => {
   return (
     <Timeline position="alternate">
-      {TimelineData.map((item, index) => (
+      {[...TimelineData].reverse().map((item, index) => (
         <TimelineItem key={index}>
           <TimelineSeparator>
             <TimelineDot color="secondary" />
@@ -21,6 +21,6 @@ const DashboardTimeline = () => {
       ))}
     </Timeline>
   );
-}
+};
 
 export default DashboardTimeline;
