@@ -77,7 +77,7 @@ const Portfolio = () => {
 
   const MiscProjects = [
     {
-      title: "Company Wide Cryptography Lecture",
+      title: "Company Cryptography Lecture",
       description: "A lecture giving an overview of various cryptographic techniques looking at the algorithms and its applications.",
       githubLink: "https://github.com/Adam-Woodruff/SHA-256",
     },

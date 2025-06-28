@@ -5,10 +5,13 @@ const customVars = {
   drawerBleeding: 56,
   borderRadius: "15px",
   colours: {
-    grey1:'#D0D0D0',
-    grey2:'#DCDCDC',
-    blue1:'#3498db',
-    white:'#ffffff'
+    grey1: '#D0D0D0',
+    grey2: '#DCDCDC',
+    dGrey: '#333333',
+    blue1: '#3498db',
+    white: '#ffffff',
+    purple: '#9b59b6',
+    red: '#F44336'
   }
 }
 
@@ -42,6 +45,9 @@ const theme = createTheme({
       fontWeight: 400,
       color: customVars.colours.dGrey,
     },
+  },
+  animation: {
+    borderGradient: `linear-gradient(45deg, ${customVars.colours.red}, ${customVars.colours.purple}, ${customVars.colours.blue1}, ${customVars.colours.blue1})`
   },
   overrides: {}
 });
