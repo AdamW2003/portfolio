@@ -1,50 +1,35 @@
 {
-  "Languages": [
-    "JavaScript",
-    "TypeScript",
-    "Python",
-    "C#",
+  "Cyber": [
+    "ISO27001",
+    "Cryptography",
+    "Vulnerability Assessment",
+    "Incident Response",
+    "Forensics",
     "PHP",
     "SQL"
   ],
-  "Database": [
-    "DynamoDb",
+  "Software": [
+    "Python",
+    "TypeScript",
+    "C#",
     "SQL",
-    "Redis"
-  ],
-  "FrameWork": [
+    "PHP",
     ".NET",
-    "React js",
-    "Angular js",
-    "Entity Framework"
+    "React Js"
   ],
-  "Tools": [
-    "SSRS",
-    "SonarQube",
-    "K9S",
-    "Git",
-    "jsreports",
-    "Elasticsearch"
+  "Analysis": [
+    "Data Visualization",
+    "OSINT",
+    "GEOINT",
+    "IMINT",
+    "Digital Footprinting",
+    "Threat Intelligence"
   ],
-  "DevOps": [
-    "AWS",
-    "Azure",
-    "Cloudflare",
-    "Github Actions",
-    "Octopus Deployment",
-    "Docker",
-    "Kubernetes"
-  ],
-  "Development": [
-    "Continous Deployment + Development",
-    "ISO 27001",
-    "REST",
+  "Operation": [
+    "Risk Management",
+    "Scrum",
     "Agile",
-    "Kanban"
-  ],
-  "Misc": [
-    "Refining Diffusion Models",
-    "3D Printing",
-    "Cryptography"
+    "Prince",
+    "Stakeholder Engagement"
   ]
 }

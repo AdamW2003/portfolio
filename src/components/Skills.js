@@ -1,6 +1,6 @@
 import React from "react";
-import PortfolioSearch from "./PortfolioSearch";
 import { Typography } from "@mui/material";
+import SkillsPortfolio from "./SkillsPortfolio";
 
 const Skills = () => {
 
@@ -17,7 +17,7 @@ const Skills = () => {
       <Typography variant="h1" sx={{ paddingBottom: 2 }}>
         Skills
       </Typography>
-      <PortfolioSearch />
+      <SkillsPortfolio />
     </div>
   );
 };
