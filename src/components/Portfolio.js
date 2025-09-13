@@ -45,17 +45,6 @@ const Portfolio = () => {
       githubLink: "https://github.com/Adam-Woodruff",
     },
     {
-      title: "String Searching",
-      description:
-        "An exploration of vairous string searching algorithms and their applications in cryptography",
-      githubLink: "https://github.com/Adam-Woodruff",
-    },
-    {
-      title: "Image Maze Generator and A* Solution",
-      description: "A Python program to generate a depth first maze coupled with an A* implementation to solve the maze and paint the solution onto an image",
-      githubLink: "https://github.com/Adam-Woodruff",
-    },
-    {
       title: "Diffie Helman",
       description: "A series of C# experiments researching elliptic curve and typical Diffie-Hellman key exchange",
       githubLink: "https://github.com/Adam-Woodruff",
@@ -91,13 +80,13 @@ const Portfolio = () => {
   return (
     <Box>
       <Typography variant="h1" sx={{ paddingBottom: "0.5em" }}>
-        Software Projects
-      </Typography>
-      <ProjectList projects={SoftwareProjects} />
-      <Typography variant="h1" sx={{ paddingBottom: "0.5em", paddingTop: "1em" }}>
       Security
       </Typography>
       <ProjectList projects={security} />
+      <Typography variant="h1" sx={{ paddingBottom: "0.5em", paddingTop: "1em" }}>
+        Software Projects
+      </Typography>
+      <ProjectList projects={SoftwareProjects} />
       <Typography variant="h1" sx={{ paddingBottom: "0.5em", paddingTop: "1em" }}>
         Misc Projects
       </Typography>
