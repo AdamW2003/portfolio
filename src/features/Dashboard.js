@@ -84,7 +84,7 @@ const Dashboard = () => {
           <DashboardTimeline />
         </motion.div>
       </Container>
-      <Container maxWidth="false">
+      {/* <Container maxWidth="false">
         <motion.div
           initial={{ opacity: 0, y: 75 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -93,7 +93,7 @@ const Dashboard = () => {
         >
           <Testimonials />
         </motion.div>
-      </Container>
+      </Container> */}
 
       <Container maxWidth="false">
         <motion.div
