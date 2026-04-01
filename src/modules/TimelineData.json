@@ -1,21 +1,34 @@
 [
-    {
-      "id": 1,
-      "title": "University of Chichester",
-      "description1": "Digital and Technology Solutions Professional (Software Engineer)",
-      "description2": "BSc (hons)"
-    },
-    {
-      "id": 2,
-      "title": "Red River Software",
-      "description1": "Full Stack Developer",
-      "description2": ""
-    },
-    {
-      "id": 3,
-      "title": "Royal Navy",
-      "description1": "Analyst",
-      "description2": ""
-    }
-  ]
-  
+  {
+    "id": 1,
+    "title": "University of Chichester",
+    "description1": "Digital and Technology Solutions Professional (Software Engineer)",
+    "description2": "BSc (hons)",
+    "startDate": "2022-01-01",
+    "endDate": "Present"
+  },
+  {
+    "id": 2,
+    "title": "Red River Software",
+    "description1": "Full Stack Developer",
+    "description2": "",
+    "startDate": "2022-01-01",
+    "endDate": "Present"
+  },
+  {
+    "id": 3,
+    "title": "Royal Navy Reserve",
+    "description1": "Analyst",
+    "description2": "",
+    "startDate": "2024-01-01",
+    "endDate": "Present"
+  },
+  {
+    "id": 4,
+    "title": "West Sussex Fire and Rescue",
+    "description1": "On-Call Firefighter",
+    "description2": "",
+    "startDate": "2026-03-01",
+    "endDate": "Present"
+  }
+]

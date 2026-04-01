@@ -9,6 +9,7 @@ import DashboardTimeline from "../components/DashboardTimeline";
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import { keyframes } from '@mui/system';
 import Testimonials from "../components/Testimonials";
+import Blog from "../components/Blog";
 
 const bounce = keyframes`
   0%, 20%, 50%, 80%, 100% {
@@ -103,6 +104,18 @@ const Dashboard = () => {
           transition={{ duration: 0.8 }}
         >
           <Portfolio />
+        </motion.div>
+      </Container>
+
+      <Container maxWidth="false">
+        <motion.div
+          id="blog"
+          initial={{ opacity: 0, y: 75 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.8 }}
+        >
+          <Blog />
         </motion.div>
       </Container>
 

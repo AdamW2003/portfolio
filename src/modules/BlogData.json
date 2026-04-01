@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "title": "Understanding SHA-256",
+    "date": "2024-03-15",
+    "summary": "A deep dive into the SHA-256 hashing algorithm and its Python implementation.",
+    "content": "SHA-256 (Secure Hash Algorithm 256-bit) is a cryptographic hash function that produces a 256-bit (32-byte) hash value. It is commonly used in various security applications and protocols, including TLS and SSL, PGP, SSH, and Bitcoin.",
+    "tags": ["Cryptography", "Python", "Security"]
+  },
+  {
+    "id": 2,
+    "title": "The Future of AI in Cybersecurity",
+    "date": "2024-04-01",
+    "summary": "Exploring how artificial intelligence is shaping the landscape of digital defense.",
+    "content": "Artificial Intelligence (AI) and Machine Learning (ML) are increasingly being used to enhance cybersecurity. From threat detection to automated response, AI provides a powerful set of tools for defenders.",
+    "tags": ["AI", "Cybersecurity", "Tech Trends"]
+  }
+]
