@@ -11,6 +11,10 @@ const DashboardTimeline = () => {
   // Today is April 1, 2026 as per session context
   const parseDate = (d) => (d === "Present" ? new Date(2026, 3, 1) : new Date(d));
   
+  const formatDate = (date) => {
+    return date.toLocaleString('default', { month: 'short', year: 'numeric' });
+  };
+
   const timelineWithDates = TimelineData.map(item => ({
     ...item,
     start: parseDate(item.startDate),
@@ -18,11 +22,13 @@ const DashboardTimeline = () => {
   }));
 
   const minDate = new Date(Math.min(...timelineWithDates.map(item => item.start)));
-  // Max date is either the latest end date or "Present"
+  // Set minDate to start of that year for better alignment
+  minDate.setMonth(0);
+  minDate.setDate(1);
+
   const maxDate = new Date(Math.max(...timelineWithDates.map(item => item.end)));
-  
   // Add some padding to the top for "Present" indicators if needed
-  maxDate.setMonth(maxDate.getMonth() + 2);
+  maxDate.setMonth(maxDate.getMonth() + 4);
 
   const totalMonths = (maxDate.getFullYear() - minDate.getFullYear()) * 12 + (maxDate.getMonth() - minDate.getMonth());
 
@@ -31,10 +37,19 @@ const DashboardTimeline = () => {
     return (months / totalMonths) * 100;
   };
 
-  // Generate year labels
-  const years = [];
-  for (let y = minDate.getFullYear(); y <= maxDate.getFullYear(); y++) {
-    years.push(y);
+  // Generate date labels (years and quarters)
+  const dateMarks = [];
+  for (let year = minDate.getFullYear(); year <= maxDate.getFullYear(); year++) {
+    for (let month = 0; month < 12; month += 3) {
+      const markDate = new Date(year, month, 1);
+      if (markDate >= minDate && markDate <= maxDate) {
+        dateMarks.push({
+          date: markDate,
+          isYear: month === 0,
+          label: month === 0 ? year.toString() : ""
+        });
+      }
+    }
   }
 
   return (
@@ -44,7 +59,7 @@ const DashboardTimeline = () => {
         position: 'relative', 
         width: '100%', 
         maxWidth: 1000, 
-        height: isMobile ? 500 : 700, 
+        height: isMobile ? 550 : 750, 
         mt: 4,
         display: 'flex',
         px: isMobile ? 2 : 4
@@ -53,32 +68,34 @@ const DashboardTimeline = () => {
         <Box sx={{ 
           position: 'relative', 
           height: '100%', 
-          width: 40,
+          width: 50,
           display: 'flex', 
           flexDirection: 'column-reverse', 
           justifyContent: 'space-between',
           borderRight: `2px solid ${theme.palette.divider}`,
           mr: 2
         }}>
-          {years.map(year => (
-            <Box key={year} sx={{ 
+          {dateMarks.map((mark, i) => (
+            <Box key={i} sx={{ 
               position: 'absolute', 
-              bottom: `${getRelativePosition(new Date(year, 0, 1))}%`,
+              bottom: `${getRelativePosition(mark.date)}%`,
               width: '100%',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'flex-end',
               pr: 1
             }}>
-              <Typography variant="caption" sx={{ color: 'text.secondary', fontWeight: 'bold' }}>
-                {year}
-              </Typography>
+              {mark.isYear && (
+                <Typography variant="caption" sx={{ color: 'text.secondary', fontWeight: 'bold' }}>
+                  {mark.label}
+                </Typography>
+              )}
               <Box sx={{ 
                 position: 'absolute', 
                 right: -2, 
-                width: 8, 
+                width: mark.isYear ? 12 : 6, 
                 height: 2, 
-                backgroundColor: theme.palette.divider 
+                backgroundColor: mark.isYear ? theme.palette.divider : theme.palette.divider + '88'
               }} />
             </Box>
           ))}
@@ -197,7 +214,7 @@ const DashboardTimeline = () => {
                         color: theme.palette.secondary.main,
                         fontSize: '0.7rem'
                       }}>
-                        {item.startDate.split('-')[0]} - {item.endDate === "Present" ? "Present" : item.endDate.split('-')[0]}
+                        {formatDate(item.start)} - {item.endDate === "Present" ? "Present" : formatDate(item.end)}
                       </Typography>
                     </Box>
                   </Tooltip>
