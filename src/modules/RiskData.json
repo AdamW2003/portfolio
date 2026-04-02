@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "title": "Data Breach / Cyber Intrusion",
+    "category": "Technical",
+    "probability": 4,
+    "impact": 5,
+    "mitigation": "Implemented AES-256 encryption and RSA key exchange protocols in software projects to ensure data confidentiality and integrity.",
+    "context": "Software Engineering / Security"
+  },
+  {
+    "id": 2,
+    "title": "Operational Equipment Failure",
+    "category": "Operational",
+    "probability": 2,
+    "impact": 5,
+    "mitigation": "Strict adherence to Dynamic Risk Assessment (DRA) and rigorous pre-incident equipment checks.",
+    "context": "Fire & Rescue Service"
+  },
+  {
+    "id": 3,
+    "title": "Information Asymmetry",
+    "category": "Strategic",
+    "probability": 3,
+    "impact": 4,
+    "mitigation": "Advanced intelligence analysis and cross-functional reporting to ensure accurate 'Common Relevant Operational Picture'.",
+    "context": "Royal Navy Reserve"
+  },
+  {
+    "id": 4,
+    "title": "Software Regression",
+    "category": "Technical",
+    "probability": 3,
+    "impact": 2,
+    "mitigation": "Automated CI/CD pipelines and comprehensive unit testing to catch breaking changes before deployment.",
+    "context": "Red River Software"
+  },
+  {
+    "id": 5,
+    "title": "Resource Scarcity (On-Call)",
+    "category": "Operational",
+    "probability": 3,
+    "impact": 3,
+    "mitigation": "Strategic staffing models and mutual aid agreements between neighboring stations.",
+    "context": "Fire & Rescue Service"
+  }
+]

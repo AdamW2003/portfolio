@@ -6,6 +6,7 @@ import ExternalLinks from "../components/ExternalLinks";
 import Portfolio from "../components/Portfolio";
 import Skills from "../components/Skills";
 import DashboardTimeline from "../components/DashboardTimeline";
+import RiskHeatMap from "../components/RiskHeatMap";
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import { keyframes } from '@mui/system';
 import Testimonials from "../components/Testimonials";
@@ -83,6 +84,17 @@ const Dashboard = () => {
           transition={{ duration: 1 }}
         >
           <DashboardTimeline />
+        </motion.div>
+      </Container>
+
+      <Container>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.8 }}
+        >
+          <RiskHeatMap />
         </motion.div>
       </Container>
       {/* <Container maxWidth="false">
